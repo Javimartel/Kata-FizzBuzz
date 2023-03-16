@@ -4,7 +4,7 @@ export const fizzbuzz = () => {
     return fizzbuzzResult;
 };
 
-const whoFizzBuzzElementIs = (num: number) => {
+export const whoFizzBuzzElementIs = (num: number) => {
     if (num % 15 === 0) {
         return "fizzbuzz";
     } else if (num % 3 === 0) {

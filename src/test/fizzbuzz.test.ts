@@ -1,4 +1,5 @@
 import { fizzbuzz } from "../core/fizzbuzz";
+import { whoFizzBuzzElementIs } from "../core/fizzbuzz";
 
 describe('Fizzbuzz Test', () => {
     it("check that number 3 returns fizz", () => {
@@ -20,7 +21,11 @@ describe('Fizzbuzz Test', () => {
 
     it("check that multiples of 3 and 5 returns fizzbuzz", () => {
         const fizzbuzzResult = fizzbuzz();
-        const buzz = fizzbuzzResult.find((num, pos) => num === "fizzbuzz" && (pos + 1) % 15 === 0)
-        expect(buzz).toBe("fizzbuzz");
+        const fb = fizzbuzzResult.find((num, pos) => num === "fizzbuzz" && (pos + 1) % 15 === 0)
+        expect(fb).toBe("fizzbuzz");
     })
+
+    it("check that a number is fizz if it is divisible by 3 or if it has a 3 in it",() => {
+        expect(whoFizzBuzzElementIs(13)).toBe("fizz");
+    })  
 });
