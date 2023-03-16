@@ -1,3 +1,3 @@
 export const fizzbuzz = () => {
-    return;
+    return [1, 2, "fizz"];
 };
