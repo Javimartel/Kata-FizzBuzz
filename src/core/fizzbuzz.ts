@@ -1,5 +1,5 @@
 export const fizzbuzz = () => {
-    const array = [1, 2, 3, 4, 5];
+    const array = Array.from(Array(100).keys()).map((num) => num + 1);
     return array.map((num) => whoFizzBuzzElementIs(num));
 };
 
