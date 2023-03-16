@@ -1,6 +1,7 @@
 export const fizzbuzz = () => {
     const array = Array.from(Array(100).keys()).map((num) => num + 1);
-    return array.map((num) => whoFizzBuzzElementIs(num));
+    const fizzbuzzResult: (string|number)[] = array.map((num) => whoFizzBuzzElementIs(num));
+    return fizzbuzzResult;
 };
 
 const whoFizzBuzzElementIs = (num: number) => {

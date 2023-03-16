@@ -17,4 +17,10 @@ describe('Fizzbuzz Test', () => {
         const fizzbuzzResult = fizzbuzz();
         expect(fizzbuzzResult.length).toBe(100);
     })
+
+    it("check that number 15 returns fizzbuzz", () => {
+        const fizzbuzzResult = fizzbuzz();
+        const buzz = fizzbuzzResult.find((num, pos) => num === "fizzbuzz" && (pos + 1) % 3 === 0 && (pos + 1) % 5 === 0)
+        expect(buzz).toBe("fizzbuzz");
+    })
 });
