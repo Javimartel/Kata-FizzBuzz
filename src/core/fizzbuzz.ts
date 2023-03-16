@@ -6,12 +6,12 @@ export const fizzbuzz = () => {
 
 export const whoFizzBuzzElementIs = (num: number) => {
     const numberStringify = num.toString();
-    if (num % 15 === 0) {
-        return "fizzbuzz";
-    } else if (num % 3 === 0 || numberStringify.includes("3")) {
-        return "fizz";
-    } else if (num % 5 === 0) {
-        return "buzz";
+    let fizzbuzz = "";
+    if (num % 3 === 0 || numberStringify.includes("3")) {
+        fizzbuzz += "fizz";
     }
-    return num;
+    if (num % 5 === 0 || numberStringify.includes("5")) {
+        fizzbuzz += "buzz";
+    }
+    return fizzbuzz === "" ? num : fizzbuzz;
 };
