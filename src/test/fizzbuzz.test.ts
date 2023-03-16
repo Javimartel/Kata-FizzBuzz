@@ -12,4 +12,9 @@ describe('Fizzbuzz Test', () => {
         const buzz = fizzbuzzResult.find((num, pos) => num === "buzz" && (pos + 1) % 5 === 0)
         expect(buzz).toBe("buzz");
     })
+
+    it("check that fizzbuzz returns 100 elements", () => {
+        const fizzbuzzResult = fizzbuzz();
+        expect(fizzbuzzResult.length).toBe(100);
+    })
 });
