@@ -7,7 +7,10 @@ export const fizzbuzz = () => {
 export const whoFizzBuzzElementIs = (num: number) => {
     const numberStringify = num.toString();
     let fizzbuzz = "";
-    if (num % 3 === 0 || numberStringify.includes("3")) {
+    if (num % 3 === 0 ) {
+        fizzbuzz += "fizz";
+    }
+    if (numberStringify.includes("3")) {
         fizzbuzz += "fizz";
     }
     if (num % 5 === 0) {
