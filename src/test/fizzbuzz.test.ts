@@ -40,4 +40,8 @@ describe('Fizzbuzz Test', () => {
     it("check that a number is fizzbuzzbuzz if it contains 3 and 5 and is divisible by 5",() => {
         expect(whoFizzBuzzElementIs(35)).toBe("fizzbuzzbuzz");
     })
+
+    it("check that a number is fizzfizz if it contains 3 and 3 and is divisible by 3",() => {
+        expect(whoFizzBuzzElementIs(33)).toBe("fizzfizz");
+    })
 });
